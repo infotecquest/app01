@@ -1,8 +1,8 @@
 language: java
 jdk:
   - openjdk11
- 
-script: ./ mvnw clean install
- 
+install:
+  - mvn -N io.takari:maven:wrapper
+  - ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 notifications:
   email: infotecquest@gmail.com
