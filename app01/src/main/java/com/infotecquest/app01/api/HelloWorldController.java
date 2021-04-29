@@ -10,6 +10,6 @@ public class HelloWorldController {
 
 	@RequestMapping(value= "/helloworld")
 	public String sayHello(@RequestParam(value = "name", defaultValue = " Anonymous")String name){
-			return "Hello World "+name;
+			return "Hello World " + name;
 	}
 }
